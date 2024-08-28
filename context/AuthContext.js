@@ -47,7 +47,7 @@ export const AuthProvider = ({children}) => {
                 setCurrentUser(user);
                 // if user doesn't exist end the function
                 if(!user){
-                    console.log("No user Found");
+                    // console.log("No user Found");
                     return 
                 }
                 
