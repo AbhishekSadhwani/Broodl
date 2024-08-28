@@ -31,13 +31,6 @@ const Calendar = (props) => {
 
     const dataToUse = data?.[selectedYear]?.[numMonth] || {};
 
-    useEffect(() => {
-        setMood(dataToUse[now.getDate()]);
-
-    },[]);
-
-    console.log(mood);
-
     // creating a date for the first day of current month
     const monthNow = new Date(selectedYear,numMonth,1);
     // day of the week on which we have the first day of the month 

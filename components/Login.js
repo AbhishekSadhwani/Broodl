@@ -47,7 +47,7 @@ const Login = () => {
   return (
     <section className='flex-1 flex flex-col gap-4 justify-center items-center'>
       <h1 className={`text-4xl sm-text-5xl md:text-6xl text-slate-800 ${fugaz.className}`}>{isSignUp ? 'Register' : 'Log In'}</h1>
-      <p className=''>You're one step away!</p>
+      <p>You&apos;re one step away!</p>
       <form onSubmit={handleSubmit} className="w-full max-w-sm mx-auto flex flex-col">
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} name='email' className="mb-4 p-2 sm:p-3 border border-indigo-600 hover:border-violet-300 rounded-full" placeholder='Email' autoComplete='off'/>
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} name='password' className="mb-4 p-2 sm:p-3 w-full border border-indigo-600 hover:border-violet-300 rounded-full" placeholder='Password' autoComplete='off' />
